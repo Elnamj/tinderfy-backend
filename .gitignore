@@ -5,8 +5,6 @@
 /node_modules
 /auth-server/authorization_code/secrets.js
 /auth-server/node_modules
-package-lock.json
-package.json
 
 # testing
 /coverage
