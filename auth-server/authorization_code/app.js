@@ -103,7 +103,12 @@ app.get('/callback', function(req, res) {
           console.log(body);
         });
 
-        let uri = process.env.FRONTEND_URI || 'http://localhost:3000/filter/#'
+        let uri;
+        if (process.env.FRONTEND_URI) {
+          uri = `${process.env.FRONTEND_URI}/filter`;
+        } else {
+          uri = "http://localhost:3000/filter/#"
+        }
         // we can also pass the token to the browser to make requests from there
         res.redirect(uri +
           querystring.stringify({
