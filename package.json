@@ -9,5 +9,8 @@
     "querystring": "~0.2.0",
     "react-router-dom": "^5.0.0",
     "request": "~2.34.0"
+  },
+  "scripts": {
+    "start": "node server.js"
   }
 }
