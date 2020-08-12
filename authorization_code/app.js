@@ -103,7 +103,7 @@ app.get('/callback', function(req, res) {
           console.log(body);
         });
 
-        let uri = process.env.FRONTEND_URI || 'http://localhost:3000/filter/#'
+        let uri = process.env.FRONTEND_URI || 'http://localhost:3000/newPlaylist/#'
         // we can also pass the token to the browser to make requests from there
         res.redirect(uri +
           querystring.stringify({

@@ -105,9 +105,9 @@ app.get('/callback', function(req, res) {
 
         let uri;
         if (process.env.FRONTEND_URI) {
-          uri = `${process.env.FRONTEND_URI}/filter?#`;
+          uri = `${process.env.FRONTEND_URI}/newPlaylist?#`;
         } else {
-          uri = "http://localhost:3000/filter?#";
+          uri = "http://localhost:3000/newPlaylist?#";
         }
         // we can also pass the token to the browser to make requests from there
         res.redirect(uri +
